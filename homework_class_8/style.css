@@ -58,5 +58,7 @@ background-color: #2a80b9;
 border-radius: 13px;
 border: 1px;
 font-size: 18px;
-font-weight: 700;    margin-bottom: 45px;
+font-weight: 700;    
+margin-bottom: 45px;
+cursor:pointer;
 }
