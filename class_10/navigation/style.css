@@ -1,0 +1,49 @@
+*{
+	padding:0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+background-color: white;
+}
+h1 {
+    margin-bottom: 25px;
+    text-decoration: underline;
+}
+nav {
+    text-align: center;
+    margin: 30px;
+}
+a {
+    text-decoration: none;
+    padding: 25px;
+}
+div.allcontent {
+    background-color: gray;
+    width: 650px;
+    margin: auto;
+    margin-top: 66px;
+    border: 1px;
+    border-radius: 10px;
+}
+p {
+    text-align: center;
+    font-size: 35px;
+    padding: 35px;
+}
+form{
+	padding-bottom: 35px;
+}
+.inform{
+	    width: 550px;
+    padding: 16px;
+    margin-left: 50px;
+    margin-bottom: 16px;
+    border: 1px;
+    border-radius: 5px;
+}
+button.inform {
+    background: #4c4747;
+    color: white;
+    cursor: pointer;
+}
