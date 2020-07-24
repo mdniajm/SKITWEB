@@ -1,0 +1,45 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background: gray;
+	color:white;
+	
+	
+}
+.container{
+	max-width: 940px;
+	margin:auto;
+	text-align:justify;
+}
+.content_area{
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+	overflow: hidden;
+}
+.main_area{
+	text-align:justify;
+	float:left;
+	width: 66%;
+	background: green;
+	padding: 10px;
+	box-sizing: border-box;
+}
+.sidebar{
+	float: left;
+	background: blue;
+	width: 34%;
+	padding:10px;
+	box-sizing: border-box;
+}
+.group:before, .group:after{
+	content: "";
+	display: table;
+
+}
+.group:after{
+	clear:both;
+}
+.group{
+	zoom:1;
+}
