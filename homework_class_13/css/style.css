@@ -71,6 +71,7 @@ body{
 }
 .button {
 	text-align: right;
+        
 	
 }
 .button button{
@@ -81,6 +82,7 @@ body{
 	border: 1px solid;
 	border-radius: 5px;
 	outline: none;
+        cursor: pointer;
 
 }
 .group:before, .group:after{
