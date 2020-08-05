@@ -71,7 +71,11 @@ body{
 }
 .button {
 	text-align: right;
+<<<<<<< HEAD
 	cursor: pointer;
+=======
+        
+>>>>>>> 67d205d48de4aa4c41eca486913150b702513341
 	
 }
 .button button{
@@ -82,7 +86,12 @@ body{
 	border: 1px solid;
 	border-radius: 5px;
 	outline: none;
+<<<<<<< HEAD
 	cursor: pointer;
+=======
+        cursor: pointer;
+
+>>>>>>> 67d205d48de4aa4c41eca486913150b702513341
 }
 .group:before, .group:after{
 	content: "";
