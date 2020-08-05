@@ -50,7 +50,7 @@ body{
 	max-width: 70%;
 	float: left;
 	overflow: hidden;
-	padding:20px 20px 25px 20px;
+	padding:20px 20px 35px 20px;
 	border-right: 3px solid gray;
 }
 .sidebar{
@@ -71,6 +71,7 @@ body{
 }
 .button {
 	text-align: right;
+	cursor: pointer;
 	
 }
 .button button{
@@ -81,7 +82,7 @@ body{
 	border: 1px solid;
 	border-radius: 5px;
 	outline: none;
-
+	cursor: pointer;
 }
 .group:before, .group:after{
 	content: "";
