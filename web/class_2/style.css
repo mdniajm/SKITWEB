@@ -1,0 +1,26 @@
+h3{
+	color: red;
+	background-color: #669999;
+}
+.mybox{
+	float: left;
+	width:240px;
+	height: 230px;
+	background: gray;
+	color: yellow;
+	padding: 10px 15px;
+	border:5px solid blue;
+	margin: 20px 10px;
+	text-align: center;
+}
+.clear{
+	clear: both;
+}
+.bigbox{
+	width: 900px;
+	height: 300px;
+	background:green;
+	border: 5px solid blue;
+	padding: 10px;
+	margin:5px auto;
+}

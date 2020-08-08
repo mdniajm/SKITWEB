@@ -1,0 +1,19 @@
+.parentbox{
+	width:1000px;
+	height: 350px;
+	background: #629BE6;
+	padding: 10px;
+	border:5px solid #5172B2;
+	margin: 20px auto;
+	text-align: center;
+}
+.childbox{
+	float: left;
+	width: 220px;
+	height: 320px;
+	background:#5B486E;
+	color: #F7F7F7;
+	border: 5px solid #5172B2;
+	padding: 8px;
+	margin:2px;
+}
