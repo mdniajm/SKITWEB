@@ -195,6 +195,7 @@ ul.breadcrumb {
       width: 1350px;
       margin: auto;
       display: table;
+      background: #bcbcbc;
   }
   footer p{
     padding: 10px;
