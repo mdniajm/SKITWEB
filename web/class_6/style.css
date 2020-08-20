@@ -1,0 +1,94 @@
+
+.maindiv{
+	width: 1200px;
+	background: gray;
+}
+.firstgen{
+	width: 100%;
+	background: white;
+	margin:20px;
+}
+.firstchild{
+	width: 520px;
+	margin:10;
+	background: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mydiv{
+	height: 200px;
+	width: 300px;
+	overflow: hidden;
+	border: 2px solid gray;
+	position: relative;
+}
+img{
+	height: 90%;
+	width: 90%;
+	margin: auto;
+	position: absolute;
+	top:0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	transition: transform 1s;
+
+}
+img:hover{
+	transform: scale(1.5);
+}
+#piechart{
+	width: 550px;
+	border: 2px solid gray;
+	padding: 25px;
+	margin-top: 20px;
+
+}

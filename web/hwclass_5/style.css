@@ -1,0 +1,126 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+	font-family: 'Work Sans', sans-serif;
+	
+	}
+body{
+    background: #f9f9f9;
+}
+.allcontent{
+	width: 1050px;
+	margin: auto;
+	padding: 0px;
+	margin-top: 20px;
+	background: #f7f7f7;
+}
+.headsection{
+    padding: 20px;
+    margin: 5px 0px;
+    background: #7c7cd81f;
+	border-radius: 10px;
+}
+h1, .headsection p{
+	text-align: center;
+
+}
+h1{
+	font-size: 48px;
+	color: #847563;
+}
+.navsection{
+    border-radius: 10px;
+    width: 1050px;
+    text-align: center;
+    background: #7c7cd81f;
+}
+.navsection a{
+	display: inline-block;
+	text-decoration: none;
+	color: #847563;
+	padding: 10px;
+	background: #c9c9ed;
+	/* border: 1px solid gray; */
+	border-radius: 4px;
+	width: 140px;
+	font-weight: 900;
+}
+.navsection a:hover{
+	background: rgb(79, 118, 119)18, 119);
+	color:#ffffff;
+}
+
+ul li{
+	list-style: none;
+	background: #c9c9ed;
+	margin: 5px;
+	border-radius: 5px;
+	padding: 5px;
+}
+ul li a{
+	width: 100%;
+	text-decoration: none;
+	color: black;
+	display: block;
+	font-weight: 600;
+}
+ul li:hover{
+	width: 100%;
+	background: cadetblue;
+	color:#ffffff;
+}
+.leftsection{
+    width: 332px;
+    height: 385px;
+    padding: 15px;
+    margin: 5px 5px 0px 0px;
+    display: inline-block;
+    border-radius: 10px;
+    float: left;
+    background: #7c7cd81f;
+}
+.rightsection{
+	 width: 709px;
+	 height: 385px;
+	 padding: 15px;
+	 margin: 5px 0px;
+	 text-align: justify;
+	 display: inline-block;
+	 border: none;
+	 border-radius: 10px;
+	 background: #7c7cd81f;
+	 clear: both;
+}
+strong {
+    font-size: 25px;
+    color: #847563;
+}
+img {
+    width: 118px;
+    float: left;
+    padding: 6px 7px;
+}
+.portfolio{
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 258px;
+    display: inline-block;
+    border-radius: 10px;
+    text-align: center;
+    background: #7c7cd81f;
+}
+i{
+	font-size: 60px;
+}
+.footersection{
+	border-radius: 10px;
+	padding: 10px;
+	background: #7c7cd81f;
+	text-align: center;
+	text-decoration: none;
+}
+.footersection a{
+	text-decoration: none;
+	color:blueviolet;
+}

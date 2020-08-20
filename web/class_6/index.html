@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Class work</title>
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="maindiv">
+		<div class="firstgen">
+			<div class="firstchild animate__fadeInLeft"></div>
+			<div class="firstchild"></div>
+		</div>
+		<div class="secondgen">
+			<div class="secondchild"></div>
+			<div class="secondchild"></div>
+			<div class="secondchild"></div>
+		</div>
+		<div class="thirdgen">
+			<div class="thirdchild"></div>
+			<div class="thirdchild"></div>
+			<div class="thirdchild"></div>
+			<div class="thirdchild"></div>
+
+		</div>
+		
+
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<div class="mydiv">
+		<img src="fl.jpeg" alt="">
+	</div>
+
+
+	<div id="piechart"></div>
+
+
+
+
+
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'Total Deth'],
+          ['Bangladesh',     3500],
+          ['Pakistan',      8700],
+          ['India',    25000]
+        ]);
+
+        var options = {
+          title: 'Covid-19 Death Analysis'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</body>
+</html>

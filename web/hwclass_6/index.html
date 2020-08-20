@@ -1,0 +1,368 @@
+<html>
+    <head>
+        <title>Hw class 6</title>
+        <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <a href="#"><img src="logo.jpg" alt=""></a>
+                <nav>
+                    
+                    <div class="leftside">
+                        
+                        <a class="navactive" href="#"><span class="fa fa-home"></span> Home</a>
+                        <a href="#">Features</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">About</a>
+                    </div>
+                    <div class="rightside">
+                        <a href="#"><span class="fa fa-envelope"></span> </a>
+                        <a href="#"><span class="fa fa-user"></span> niaj</a>
+    
+                    </div>
+                    
+                </nav>
+            </header>
+            <div class="sidebar">
+                <ul>
+                    <li>GENERAL
+                        <ul>
+                            <li > <a class="liactive" href=""><span class="fa fa-tachometer-alt"></span>
+                                Dashboard</a> </li>
+                        </ul>   
+                    </li>
+                    
+                    <li>ADMINISTRATION
+                        <ul>
+                            <li><a href=""><span class="fa fa-edit"></span>
+                                Forms</a></li>
+                            <li><a href=""><span class="fa fa-tv"></span>
+                                UI Elements</a></li>
+                            <li><a href=""><span class="fa fa-th"></span> Tables</a></li>
+                            <li><a href=""><span class="fa fa-chart-bar"></span> Presentations</a></li>
+                            <li><a href=""><span class="fa fa-cog"></span> Settings</a>
+                            <ul class="setttings">
+                                <li><a href="">Members</a> </li>
+                                <li><a href="">Plugins</a></li>
+                                <li><a href="">Add a member</a></li>
+                            </ul>
+                            </li>
+                            
+                        </ul>
+                    </li>
+                    <li>LIVE ON
+                        <ul>
+                            <li><a href=""><span class="fa fa-bug"></span> Additional Pages</a></li>
+                            <li><a href=""><span class="fa fa-windows"></span> Extras</a></li>
+                            <li><a href=""><span class="fa fa-laptop"></span> Landing Page</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="bodycontent">
+                <div class="bread">
+                    <ul class="breadcrumb">
+                        <li><a href="#">Home</a></li>
+                        <li>Dashboard</li>
+                       
+                      </ul>
+                </div>
+                <div class="row">
+                    <h3><span class="fa fa-tachometer-alt"></span> Dashboard</h3>
+                    <div class="rowItem animate__animated animate__fadeInLeft">
+                       <p>TOP SELLER TOTAL</p>
+                       <h3>56,950</h3>
+                       <table>
+                           <tr>
+                              <td>SALES $</td>
+                              <td>OVERALL $</td>
+                              <td>SALAES $</td>
+                           </tr>
+                           <tr>
+                            <td>250K</td>
+                            <td>750K</td>
+                            <td>50%</td>
+                         </tr>
+                       </table>
+
+                    </div>
+                    <div class="rowItem yellow animate__animated animate__zoomIn">
+                        <p>REVENUW/EXPENSES</p>
+                       <h3>55%/40%</h3>
+                       <table>
+                           <tr>
+                              <td>REV PROD</td>
+                              <td>SREV SERV</td>
+                              <td>SEXP%</td>
+                           </tr>
+                           <tr>
+                            <td>30%</td>
+                            <td>25%</td>
+                            <td>45%</td>
+                         </tr>
+                       </table>
+                        
+                    </div>
+                    <div class="rowItem blue animate__animated animate__zoomIn">
+                        <p>FEEDBACK ACTIVITY</p>
+                       <h3>75%</h3>
+                       <table>
+                           <tr>
+                              <td>POS</td>
+                              <td>NEG</td>
+                              <td>POS/NEG %</td>
+                           </tr>
+                           <tr>
+                            <td>1560</td>
+                            <td>368</td>
+                            <td>77%/23%</td>
+                         </tr>
+                       </table>
+                        
+                    </div>
+                    <div class="rowItem red animate__animated animate__fadeInRight">
+                        <p>ORDERS/RETURNS</p>
+                       <h3>75%/25%</h3>
+                       <table>
+                           <tr>
+                              <td>ORDERS</td>
+                              <td>$SRETURN</td>
+                              <td>$SUCCESS</td>
+                           </tr>
+                           <tr>
+                            <td>425K</td>
+                            <td>106K</td>
+                            <td>+25.5%</td>
+                         </tr>
+                       </table>
+                        
+                    </div>
+                </div>
+                
+                <div class="graph " >
+                    <h3 class="wow animate__animated animate__fadeIn">Overall Revenuw by Services </h3>
+                    <div  id="donutchart">
+                    
+
+                    </div>
+                </div>
+                <div class="graph ">
+                    <h3 class="wow animate__animated animate__fadeIn"> Orders Level Throughout the Day </h3>
+                    <div id="chart_div">
+                    
+
+                    </div>
+                </div>
+                <div class="graph wow animate__animated animate__fadeIn">
+                    <h3 class=""> Activity Level Throughout the Day </h3>
+                    <div id="chart_div2">
+                    
+
+                    </div>
+                </div>
+                <div class="graph wow animate__animated animate__fadeIn">
+                    <h3 class=" wow animate__fadeInLeft">Seles Revenuw in Overseas  </h3>
+                    <div id="donutchart2">
+                    
+
+                    </div>
+                </div>
+                
+                
+            </div>
+            <footer>
+                <p>&copy; 2020 all right reserved by <a href="mdniajmakhdum.ga">NMIT</a>  . Designed by <a href="niajinfo.ml">Md. Niaj Makhdum</a></p>
+            </footer>
+
+        </div>
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://kit.fontawesome.com/509539fb79.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/graph.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script> 
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Service', 'Rev'],
+          ['Web Design',     11],
+          ['Digital Marketing',      2],
+          ['Graohic Design',  2],
+          ['Wordpress', 2],
+          ['Logo Design',    7]
+        ]);
+
+        var options = {
+          title: '',
+          pieHole: 0.4,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+      }
+    </script>
+    <script>
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawMultSeries);
+
+function drawMultSeries() {
+      var data = new google.visualization.DataTable();
+      data.addColumn('timeofday', 'Time of Day');
+      data.addColumn('number', 'Motivation Level');
+      data.addColumn('number', 'Energy Level');
+
+      data.addRows([
+        [{v: [8, 0, 0], f: '8 am'}, 1, .25],
+        [{v: [9, 0, 0], f: '9 am'}, 2, .5],
+        [{v: [10, 0, 0], f:'10 am'}, 3, 1],
+        [{v: [11, 0, 0], f: '11 am'}, 4, 2.25],
+        [{v: [12, 0, 0], f: '12 pm'}, 5, 2.25],
+        [{v: [13, 0, 0], f: '1 pm'}, 6, 3],
+        [{v: [14, 0, 0], f: '2 pm'}, 7, 4],
+        [{v: [15, 0, 0], f: '3 pm'}, 8, 5.25],
+        [{v: [16, 0, 0], f: '4 pm'}, 9, 7.5],
+        [{v: [17, 0, 0], f: '5 pm'}, 10, 10],
+      ]);
+
+      var options = {
+        title: '',
+        hAxis: {
+          title: 'Time of Day',
+          format: 'h:mm a',
+          viewWindow: {
+            min: [7, 30, 0],
+            max: [17, 30, 0]
+          }
+        },
+        vAxis: {
+          title: 'Rating (scale of 1-10)'
+        }
+      };
+
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+    </script>
+    <script type="text/javascript">
+        google.charts.load("current", {packages:["corechart"]});
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+          var data = google.visualization.arrayToDataTable([
+            ['Service', 'Rev'],
+            ['Web Design',     11],
+            ['Digital Marketing',      2],
+            ['Graohic Design',  2],
+            ['Wordpress', 2],
+            ['Logo Design',    7]
+          ]);
+  
+          var options = {
+            title: '',
+            pieHole: 0.4,
+          };
+  
+          var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+          chart.draw(data, options);
+        }
+      </script>
+      <script>
+          google.charts.load('current', {packages: ['corechart', 'bar']});
+  google.charts.setOnLoadCallback(drawMultSeries);
+  
+  function drawMultSeries() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('timeofday', 'Time of Day');
+        data.addColumn('number', 'Motivation Level');
+        data.addColumn('number', 'Energy Level');
+  
+        data.addRows([
+          [{v: [8, 0, 0], f: '8 am'}, 8, 7],
+          [{v: [9, 0, 0], f: '9 am'}, 10, 9],
+          [{v: [10, 0, 0], f:'10 am'}, 10, 9],
+          [{v: [11, 0, 0], f: '11 am'}, 10, 9],
+          [{v: [12, 0, 0], f: '12 pm'}, 5, 2.25],
+          [{v: [13, 0, 0], f: '1 pm'}, 6, 3],
+          [{v: [14, 0, 0], f: '2 pm'}, 7, 4],
+          [{v: [15, 0, 0], f: '3 pm'}, 3, 5.25],
+          [{v: [16, 0, 0], f: '4 pm'}, 9, 7.5],
+          [{v: [17, 0, 0], f: '5 pm'}, 10, 10],
+        ]);
+  
+        var options = {
+          title: '',
+          hAxis: {
+            title: 'Time of Day',
+            format: 'h:mm a',
+            viewWindow: {
+              min: [7, 30, 0],
+              max: [17, 30, 0]
+            }
+          },
+          vAxis: {
+            title: 'Rating (scale of 1-10)'
+          }
+        };
+  
+        var chart = new google.visualization.ColumnChart(
+          document.getElementById('chart_div2'));
+  
+        chart.draw(data, options);
+      }
+      </script>
+      <script src="js/wow.min.js"></script>
+      <script>
+      new WOW().init();
+      </script> 
+      <script src="https://kit.fontawesome.com/509539fb79.js" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Service', 'Rev'],
+        ['USA',     50],
+        ['Russia',      20],
+        ['UK',  20],
+        ['Italy', 8],
+        ['Germany',    3]
+      ]);
+
+      var options = {
+        title: '',
+        pieHole: 0.4,
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('donutchart2'));
+      chart.draw(data, options);
+    }
+  </script>
+  
+    </body>
+
+</html>

@@ -1,0 +1,53 @@
+ul{
+	background: #3399ff;
+	padding: 20px;
+	list-style: none;
+	text-align: center;
+}
+ul li{
+	margin: 10px;	
+	display: inline-block;
+
+}
+ul li a{
+	text-align: center;
+	background: #cce5ff; 
+	padding: 20px;
+	font-size: 24px;
+	color: red;
+	text-decoration: none;
+	display: block;
+	width: 200px;
+	margin: auto;
+	
+	box-shadow: inset -12px -12px #5d4e4e;
+
+	border-left: 5px solid red;
+}
+ul li a:hover{
+	background: navy;
+	color: #ffffff;
+	box-shadow: 0px 5px red 
+	inset 0px 
+
+	;
+
+}
+table{
+	width: 700px;
+	
+	border:1px solid black;
+	}
+td, th{
+	border:1px solid black;
+}
+th{
+   background: green;
+}
+tr:nth-child(even){
+	background: green;
+	}
+}
+div{
+	overflow-x: auto;
+}
