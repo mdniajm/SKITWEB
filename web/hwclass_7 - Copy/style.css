@@ -5,21 +5,18 @@
     font-family: 'Poppins', sans-serif;
     
 }
-:root {
-    --animate-duration: 800ms;
-    --animate-delay: 0.9s;
-  }
-body{
-    scroll-behavior: smooth; 
+.container{
+   width: 100%;
+   margin: 0 auto;  
 }
 header{
+    width:  100%;
+    margin: 0 auto;
 	background: url("images/Rectangle-1-copy-7.jpg");
 	background-attachment: scroll;
     background-repeat: no-repeat;
     background-position: center;
 	background-size: cover;
-    
-    transition: 1s;
 }
 .info {
     width: 100%;
@@ -46,11 +43,12 @@ header{
 }
 a.navbar-brand {
     display: inline;
+    padding-left: 50px;
 }
 
 nav.navbar {
     width: 100%;
-    margin: 0px 50px 0px 50px;
+    margin: 0px 0px 0px px;
 }
 
 nav ul{
@@ -213,7 +211,8 @@ img{
     margin-bottom: 32px;
 }
 .video-section{
-    width: 100%;
+    width:  100%;
+    margin: 0 auto;
     height: 656px;
     background: url("images/Rectangle-532-copy.jpg");
     background-attachment: scroll;
@@ -315,6 +314,7 @@ img{
 }
 .bannar{
     width: 100%;
+    margin: 0 auto;
     background: url("images/Rectangle-534-copy.jpg");
     background-attachment: scroll;
     background-position: center;
@@ -336,6 +336,7 @@ img{
 }
 footer{
     width: 100%;
+    margin: 0 auto;
     text-align: center;
     background: #111111;
     font-size: 14px;
@@ -466,4 +467,11 @@ a{
         width: 106px;
      
     }
+  }
+  @media screen and (max-width: 1300px) {
+    header, .video-section, .bannar, footer{
+        width: 1300px;
+     
+    }
+
   }
