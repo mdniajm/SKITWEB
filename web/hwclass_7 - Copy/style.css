@@ -79,6 +79,7 @@ button{
 .title-secton {
     margin: 177px 0px 0px 0px;
     color: white;
+
 }
 .title{
     text-align: center;
@@ -97,6 +98,7 @@ button{
 .item-main {
     margin: 130px 0px 0px 0px;
     text-align: center;
+    padding-bottom: 100px;
 }
 .title-item {
     width: 220px;
