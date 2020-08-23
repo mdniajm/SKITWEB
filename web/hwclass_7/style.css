@@ -1,0 +1,176 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+header{
+	background: url("images/Rectangle-1-copy-7.jpg");
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 932px;
+}
+ul{
+	list-style: none;
+	/* float: right; */
+	margin: -42px 61px 0px auto;
+	margin-left: auto;
+	display: table;
+	margin-right: 80px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+	padding: 0px 1.2em;
+}
+.title-secton {
+    margin: 177px 0px 0px 0px;
+    color: white;
+}
+
+a.navbar-brand {
+    display: inline;
+}
+
+nav.navbar {
+    width: 100%;
+    margin: 0px 50px 0px 50px;
+}
+
+.title{
+    text-align: center;
+    /* margin: 177px; */
+}
+.item-main {
+    margin: 130px 0px 0px 0px;
+    text-align: center;
+}
+
+.title-item {
+    width: 220px;
+    height: 185px;
+    display: inline-block;
+    margin: 0px 93px;
+    text-align: left;
+}
+p {
+    line-height: 26px;
+    color: #c1c1c1;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 200;
+}
+.title p{
+    font-size:24px;
+    *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img{
+    border-radius: 10px;
+}
+button{
+    background: blue;
+    padding: 16px 30px;
+    border: 1px;
+    border-radius: 3px;
+    color: white;
+}
+
+.title-secton {
+    margin: 177px 0px 0px 0px;
+    color: white;
+}
+
+a.navbar-brand {
+    display: inline;
+}
+
+nav.navbar {
+    width: 100%;
+    margin: 0px 50px 0px 50px;
+}
+
+.title{
+    text-align: center;
+    /* margin: 177px; */
+}
+.item-main {
+    margin: 130px 0px 0px 0px;
+    text-align: center;
+}
+
+.title-item {
+    width: 220px;
+    height: 185px;
+    display: inline-block;
+    margin: 0px 93px;
+    text-align: left;
+}
+p {
+    line-height: 26px;
+    color: #c1c1c1;
+}
+
+h1 {
+    font-size: 80px;
+    font-weight: 200;
+}
+.title p{
+    font-size:24px;
+}
+button.button {
+    background: blue;
+}
+.content1 .body-text {
+    width: 400px;
+    display: inline-block;
+    float: left;
+    margin: 92px 0px;
+    padding: 23px;
+}
+
+.body {
+    width: 1200px;
+    margin: 183px auto;
+}
+
+.content1 .pic {
+    width: 748px;
+    display: inline-block;
+    /* border-radius: 10px; */
+    text-align: right;
+}
+
+.content1 {
+    display: inline-block;
+    padding: 26px;
+}
+
+img{
+    border-radius: 10px;
+}
+
+.body h2 {
+    font-size:40px;
+    font-weight:300;
+    line-height:120%;
+    margin-bottom: 30px;
+}
+
+td h1 {
+    font-size: 40px;
+    color: blue;
+    padding: 20px 100px 16px 0px;
+}
+
+
+
+
