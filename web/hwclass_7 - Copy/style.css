@@ -79,7 +79,6 @@ button{
 .title-secton {
     margin: 177px 0px 0px 0px;
     color: white;
-    padding-bottom: 100px;
 }
 .title{
     text-align: center;
@@ -178,11 +177,9 @@ img{
     padding: 23px 0px 23px 90px;
 }
 .heading{
-    width: 1300px;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 150px;
-    margin: 0 auto;
 }
 .heading p{
     color: blue;
@@ -196,13 +193,10 @@ img{
 }
 .row-section{
 
-width: 1300px;
-
-margin: 0 auto;
 }
 .row-item{
     display: inline-block;
-    width: 296px;
+    width: 271px;
     height: 330px;
     text-align: center;
     padding: 70px 21px 40px;
@@ -475,9 +469,13 @@ a{
     }
   }
   @media screen and (max-width: 1300px) {
-    header, .video-section, .bannar, footer{
+    header, .video-section, .bannar, footer, .row-section, .body{
         width: 1300px;
+        margin: 0 auto;
      
+    }
+    .row-item{
+        width: 296px;
     }
 
   }
