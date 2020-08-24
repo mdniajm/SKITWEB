@@ -3,11 +3,13 @@
 	padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    
+
 }
 .container{
    width: 100%;
-   margin: 0 auto;  
+   margin: 0 auto;
+   overflow-y: scroll;
+   
 }
 header{
     width:  100%;
@@ -16,7 +18,9 @@ header{
 	background-attachment: scroll;
     background-repeat: no-repeat;
     background-position: center;
-	background-size: cover;
+    background-size: cover;
+    overflow-y: scroll;
+    
 }
 .info {
     width: 100%;
@@ -33,6 +37,11 @@ header{
 }
 .info .fa{
     padding: 7px 0px 7px 30px;
+    color: white;
+    transition: all 1s;
+}
+.info .fa:hover{
+    color: #c1c1c1;
 }
 .info hr{
     clear: both;
@@ -53,11 +62,9 @@ nav.navbar {
 
 nav ul{
 	list-style: none;
-	/* float: right; */
-	margin: -42px 61px 0px auto;
-	margin-left: auto;
+	margin: -42px 40px 0px auto;
 	display: table;
-	margin-right: 80px;
+	
 }
 nav ul li{
 	display: inline-block;
@@ -66,7 +73,14 @@ nav ul li a{
 	text-decoration: none;
 	display: inline-block;
 	color: white;
-	padding: 0px 1.2em;
+    padding: 0px 1.2em;
+    transition: all 1s;
+}
+nav ul li a:hover{
+    color: #c1c1c1;
+}
+.active{
+    border-bottom: 2px solid blue;
 }
 button{
     background: blue;
@@ -75,6 +89,10 @@ button{
     border-radius: 3px;
     color: white;
     cursor: pointer;
+    transition: all 1s;
+}
+button:hover{
+    background: rgb(52, 52, 248);
 }
 .title-secton {
     margin: 177px 0px 0px 0px;
@@ -107,6 +125,11 @@ button{
     margin: 0px 93px;
     text-align: left;
     padding-bottom: 177px;
+    transition: all 1s;
+}
+.title-item:hover{
+    transform: scale(1.025);
+    cursor: pointer;
 }
 .title-item p{
     line-height: 26px;
@@ -119,6 +142,12 @@ button{
     padding: 20px;
     font-size: 25px;
     margin-bottom: 20px;
+    transition: all 1s;
+}
+.title-item .fa:hover{
+    background: #6e63ff;
+    color: black;
+    cursor: pointer;
 }
 .body {
     width: 1200px;
@@ -202,15 +231,25 @@ img{
     height: 330px;
     text-align: center;
     padding: 70px 21px 40px;
-    border: 1px solid #f0efff;
+    border: 2px solid #f0efff;
     border-radius: 10px;
     margin:12px;
-    /* letter-spacing: 1.5px; */
+    transition: all 1s;
+    
+}
+.row-item:hover{
+    transform: scale(1.025);
+    cursor: pointer;
 }
 .row-item .fa{
     color: #4d40ff;
     font-size: 34px;
     margin-bottom: 32px;
+    transition: all 1s;
+}
+.row-item .fa:hover{
+    transform: scale(1.025);
+    cursor: pointer;
 }
 .video-section{
     width:  100%;
@@ -221,6 +260,13 @@ img{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.fa-play{
+    color: white;
+    transition: all 1s;
+}
+.fa-play:hover{
+    color: #c1c1c1;
 }
 .v-text{
     text-align: center;
@@ -360,10 +406,21 @@ footer h4{
 
 }
 .row a {
+    
     text-decoration: none;
     color: #c1c1c1;
     display: block;
     line-height: 30px;
+    transition: all 1s;
+}
+.row:nth-child(1) a{
+    display: inline;
+}
+.row:nth-child(1) a:hover{
+    color: white;
+}
+.row a:hover{
+    color: white;
 }
 .row span{
     color: #c1c1c1;
@@ -391,6 +448,10 @@ footer h4{
     line-height: 30px;
     padding: 0px 0px 0px 25px;
     font-size: 14px;
+    transition: all 1s;
+}
+.copyright a:hover{
+    color:#c1c1c1;
 }
 .copyright hr{
     border: none;
@@ -401,12 +462,17 @@ margin: 1px 0 40px;
     background-color: rgba(250, 250, 250, 0.00);
     border:2px solid blue;
     color: black;
+    transition: all 1s;
+}
+.product-1 button:hover, .bannar button:hover{
+    border: 2px solid rgb(139, 139, 253);
 }
 .bannar button{
     background-color: rgba(250, 250, 250, 0.00);
-    border:2px solid #6b6bf7;
+    border:2px solid #5858f6;
     color:white;
     font-size: 16px;
+    transition: all 1s;
 }
 
 .sidebar{
@@ -436,6 +502,9 @@ margin: 1px 0 40px;
     color: gray;
     border-bottom: 1px solid #80808038;
 }
+.sidebar .fa:hover{
+    color: blue;
+}
 .sidebar .fa:hover .sidebar p{
     cursor: pointer;
     display: block;
@@ -460,7 +529,11 @@ margin: 1px 0 40px;
     padding: 14px;
     font-size: 26px;
     color: #80808061;
-    
+    transition: all 1s;
+  
+}
+.go-top .fa:hover{
+    color:blue;
 }
 a{
     text-decoration: none;
