@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
 	<title>Home Task</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 	<link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
@@ -38,6 +39,15 @@
 		  });
 		});
 		</script>
+		 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		 <script>
+		   jQuery(document).ready(function( $ ) {
+			   $('.counter').counterUp({
+				   delay: 10,
+				   time: 1000
+			   });
+		   });
+		 </script>
 </head>
 <body> 
 	<div class="container">
@@ -50,13 +60,20 @@
 					<a href=""><span class="fa fa-facebook"></span></a>
 					<a href=""><span class="fa fa-twitter"></span></a>
 					<a href=""><span class="fa fa-instagram"></span></a>
-					<a href=""><span class="fa fa-search"></span></a>
+					<a href="#ex1" rel="modal:open"><span class="fa fa-search"></span></a>
 				</div>
 				<hr>
 			</div>
 			<nav class="navbar">
 	  <a class="navbar-brand" href="#"><img src="images/Jevelin_logo_light.png" alt=""></a>
-	  
+
+	  <div id="ex1" class="modal">
+		<form action="/action_page.php">
+			<input type="text" placeholder="Search Here.." name="search">
+			<button type="submit"><i class="fa fa-search"></i></button>
+		  </form>
+		
+	  </div>
 	
 	  <div>
 		<ul >
@@ -108,24 +125,63 @@
 		</div>
 	</div>
 		</header>
-		
-		<div class="sidebar">
-			<a href=""><span class="fa fa-database"></span></a>
-			<a href=""><span class="fa fa-glasses"></span></a>
-			<a href=""><span class="fa fa-shopping-bag"></span></a>
-			<a href=""><span class="fa fa-question-circle"></span></a>
-			<a href=""><span class="fa fa-life-ring"></span></a>
-			<a href=""><span class="fa fa-envelope"></span></a>	
-		</div>
-		<!-- <div class="sidebar">
-			<p>Showcase</p>
-			<p>Demo View></p>
-			<p>Purchase Theme</p>
-			<p>Question/Answer</p>
-			<p>Get Support</p>
-			<p>Ask a pre sale Question</p>
-		</div> -->
+		<div class="sidebar-all">
+			<div class="sidebar first">
+
+				<div class="side-item">
+					<a href=""><span class="fa fa-database"></span></a>
+				</div>
+				<div class="side-hover">
+					Showcase
+				</div>	
+			</div>
+			<div class="sidebar second">
 	
+				<div class="side-item">
+					<a href=""><span class="fa fa-glasses"></span></a>
+				</div>
+				<div class="side-hover">
+					Search&nbsp;Quary
+				</div>	
+			</div>
+			<div class="sidebar third">
+	
+				<div class="side-item">
+					<a href=""><span class="fa fa-shopping-bag"></span></a>
+				</div>
+				<div class="side-hover">
+					Purchase&nbsp;Theme
+				</div>	
+			</div>
+			<div class="sidebar forth">
+	
+				<div class="side-item">
+					<a href=""><span class="fa fa-question-circle"></span></a>
+				</div>
+				<div class="side-hover">
+					Question/Answer
+				</div>	
+			</div>
+			<div class="sidebar fifth">
+	
+				<div class="side-item">
+					<a href=""><span class="fa fa-life-ring"></span></a>
+				</div>
+				<div class="side-hover">
+					Get&nbsp;Support
+				</div>	
+			</div>
+			<div class="sidebar sixth">
+	
+				<div class="side-item">
+					<a href=""><span class="fa fa-envelope"></span></a>
+				</div>
+				<div class="side-hover">
+					Ask&nbsp;a&nbsp;pre&nbsp;sale&nbsp;Question
+				</div>	
+			</div>	
+		</div>
+		
 		<div class="go-top">
 			<a href="#head"><span class="fa fa-chevron-circle-up"></span></a>
 		</div>
@@ -135,8 +191,8 @@
 			<h2>About our main company goal</h2>
 			<p>Vivamus fermentum, augue a gravida gravida, odio erat malesuada est, eu condimentum lorem felis sed risus.</p>
 			<table>
-				<tr><td><h1>20+</h1></td>
-					<td><h1>15k</h1></td></tr>
+				<tr><td><h1> <span class="counter">20</span>+</h1></td>
+					<td><h1> <span class="counter">15</span>k</h1></td></tr>
 					<tr>
 						<td>Investor</td>
 						<td>Project</td>
@@ -240,10 +296,10 @@
 		<div class="row">
 			<img src="images/Jevelin_logo_light.png">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at</p>
-			<a class="inline" href=""><span class="fa fa-facebook"></span></a>
-					<a class="inline" href=""><span class="fa fa-twitter"></span></a>
-					<a class="inline" href=""><span class="fa fa-instagram"></span></a>
-					<a class="inline" href=""><span class="fa fa-search"></span></a>
+			<a class="inline" href="#"><span class="fa fa-facebook"></span></a>
+					<a class="inline" href="#"><span class="fa fa-twitter"></span></a>
+					<a class="inline" href="#"><span class="fa fa-instagram"></span></a>
+					<a class="inline" href="#"><span class="fa fa-search"></span></a>
 		</div>
 		<div class="row">
 			<h4>Explore</h4>
@@ -286,6 +342,10 @@
               new WOW().init();
               </script>
 <script src="https://kit.fontawesome.com/509539fb79.js" crossorigin="anonymous"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
 
 

@@ -1,0 +1,105 @@
+.large{
+	width: 300px;
+	height: 300px;
+	background: gray;
+	border: 5px solid blue;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: none;
+	z-index: 1;
+}
+.large img{
+	width: 100%;
+	height: 100%;
+}
+.small{
+	width: 100px;
+	border: 2px solid navy;
+}
+.small img{
+	width: 100%;
+}
+.small:hover .large{
+	display: block;
+}
+.detail{
+	width: 300px;
+	min-height: 350px;
+	border: 5px solid blue;
+	margin-top: 10px;
+	text-align: center;
+	padding: 20px;
+}
+.detail img{
+	width: 80%;
+	opacity: 0.7;
+	border:2px solid ;
+}
+
+button{
+	background-color: gray;
+	border: 0px;
+	border-radius: 5px;
+	padding: 3px 10px;
+	cursor: pointer;
+	width: 150px;
+}
+.detail:hover{
+	box-shadow: 0px 0px 5px 5px gray;
+}
+.detail:hover img{
+	border:2px solid gray;
+}
+ul{
+	list-style: none;
+	margin-left: 100px;
+}
+li{
+	color: navy;
+	border-bottom: 5px solid green;
+	background-color: green;
+	padding: 5px;
+	border-bottom: 2px solid gray;
+	font-size: 20px;
+	width: 200px;
+	margin: 5px;
+	transition: border-bottom 0.5s;
+	transition: all 2s;
+}
+li:hover{
+	border-bottom: 5px solid green;
+}
+li::before{
+	content: "Barishal";
+	margin-right: ;
+	width: 5px;
+	height: 5px;
+	/*background-color: red;*/
+	/*display: block;*/
+	/*margin-top: 5px;*/
+	
+	visibility: hidden;
+	transition: all .5s;
+}
+li:hover::before{
+	width: 100px;
+	visibility: visible;
+}
+li:{
+	content: "A";
+	color: red;
+}
+/*
+.folded_corner{
+				 position:relative;
+				  width:210px; 
+				  margin:4vh auto;
+				  padding:40px; 
+				  color:#fff; 
+				  font: 20px;
+				  background:tomato; 
+				  background: linear-gradient(to right, transparent 100%, rgba(0,0,0,.4) 0) 0/8em 2em, linear-gradient(45deg, transparent 1.9em, #58a 0); */
