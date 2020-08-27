@@ -27,7 +27,7 @@ header{
     color: white;
     font-size: 14px;
     margin: auto;
-    padding: 15px 0px;
+    padding: 15px 0px 0px 0px;
 }
 
 .social {
@@ -48,16 +48,39 @@ header{
     border: none;
     border-bottom: .5px solid #ffffff38;
     height: 12px;
-    margin-bottom: 24px;
+    margin-bottom: 13px;
 }
+.navbar{
+    position: -webkit- sticky;
+    background-color: transparent;
+
+}
+.bgt{
+    background-color: transparent;
+}
+.bgd{
+    background-color: rgba(0, 0, 0, .5);
+}
+
 a.navbar-brand {
     display: inline;
     padding-left: 50px;
 }
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+  }
 
 nav.navbar {
     width: 100%;
     margin: 0px 0px 0px px;
+    /* height: 50px; */
+    padding-top: 15px;
+    padding-bottom: 8px;
 }
 
 nav ul{
@@ -74,26 +97,19 @@ nav ul li a{
 	display: inline-block;
 	color: white;
     padding: 0px 1.2em;
-    transition: all 1s;
+    transition: color 2s;
+    margin-right: 5px;
 }
 nav ul li a:hover{
-    color: #c1c1c1;
+    color: #CA57BE;
+}
+.inactive, .inactive1, .inactive2, .inactive3{
+    border-bottom: none;
 }
 .active{
     border-bottom: 2px solid blue;
 }
-button{
-    background: blue;
-    padding: 16px 30px;
-    border: 1px;
-    border-radius: 3px;
-    color: white;
-    cursor: pointer;
-    transition: all 1s;
-}
-button:hover{
-    background: rgb(52, 52, 248);
-}
+
 .title-secton {
     margin: 177px 0px 0px 0px;
     color: white;
@@ -136,7 +152,7 @@ button:hover{
     color: #c1c1c1;
 }
 .title-item .fa{
-    border: 2px solid #6e63ff;
+    border: 2px solid #CA57BE;
     background-color: rgba(250, 250, 250, 0.01);
     border-radius: 10px;
     padding: 20px;
@@ -145,7 +161,7 @@ button:hover{
     transition: all 1s;
 }
 .title-item .fa:hover{
-    background: #6e63ff;
+    background: #CA57BE;
     color: black;
     cursor: pointer;
 }
@@ -348,8 +364,15 @@ img{
     
 }
 .row-item:hover{
-    transform: scale(1.025);
+    background-color: #CA57BE;
     cursor: pointer;
+    color:white;
+}
+.row-item p{
+    transition: color 1s;
+}
+.row-item:hover p, .row-item:hover i{
+    color:rgb(63, 60, 73);
 }
 .row-item .fa{
     color: #4d40ff;
@@ -376,7 +399,7 @@ img{
     transition: all 1s;
 }
 .fa-play:hover{
-    color: #c1c1c1;
+    color: #CA57BE;
 }
 .v-text{
     text-align: center;
@@ -440,7 +463,7 @@ img{
     margin: 0px 11px;
 }
 .product-1 ul{
-    ba: 1px;
+    
 }
 .product-2{
     height: 700px;
@@ -572,6 +595,18 @@ footer h4{
     border-bottom: .5px solid #ffffff38;
 margin: 1px 0 40px;
 }
+button{
+    background: blue;
+    padding: 16px 30px;
+    border: 1px;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+    transition: all 1s;
+}
+button:hover{
+    background: #CA57BE;
+}
 .product-1 button{
     background-color: rgba(250, 250, 250, 0.00);
     border:2px solid blue;
@@ -580,6 +615,8 @@ margin: 1px 0 40px;
 }
 .product-1 button:hover, .bannar button:hover{
     border: 2px solid rgb(139, 139, 253);
+    background-color: #CA57BE;
+    color:white;
 }
 .bannar button{
     background-color: rgba(250, 250, 250, 0.00);

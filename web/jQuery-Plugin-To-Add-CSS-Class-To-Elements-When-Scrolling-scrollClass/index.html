@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery scrollClass Plugin Examples</title>
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+<style>
+.container { margin-top:150px;}
+h2 { margin-bottom:600px;}
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+	visibility: visible;
+}
+</style>
+</head>
+
+<body><div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/animation/jQuery-Plugin-To-Add-CSS-Class-To-Elements-When-Scrolling-scrollClass.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<div class="container">
+<h1 class="center-block">jQuery scrollClass Plugin Examples</h1>
+<h2 class="center-block">Scroll Animations</h2>
+<div class="row">
+<div class="col col-lg-4">
+<div class="card animated" data-scroll-class="swing" >
+  <h3 class="card-header">Featured</h3>
+  <div class="card-block">
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+<div class="col col-lg-4">
+<div class="card animated" data-scroll-class="swing" >
+  <h3 class="card-header">Featured</h3>
+  <div class="card-block">
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+<div class="col col-lg-4">
+<div class="card animated" data-scroll-class="swing" >
+  <h3 class="card-header">Featured</h3>
+  <div class="card-block">
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+<div class="col col-lg-4">
+<div class="card animated" data-scroll-class="swing" >
+  <h3 class="card-header">Featured</h3>
+  <div class="card-block">
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+<div class="col col-lg-4">
+<div class="card animated" data-scroll-class="swing" >
+  <h3 class="card-header">Featured</h3>
+  <div class="card-block">
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+<div class="col col-lg-4">
+<div class="card animated" data-scroll-class="swing" >
+  <h3 class="card-header">Featured</h3>
+  <div class="card-block">
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+</div>
+<h2 class="center-block">Image Lazy Load</h2>
+<div class="row">
+<div class="col-lg-4">
+  <div data-img="https://unsplash.it/600/400?image=1084"  class="lazy-load animated hidden" data-scroll-class="visible fadeIn zoomIn"></div> </div>
+  <div class="col-lg-4">
+  <div data-img="https://unsplash.it/600/400?image=1083"  class="lazy-load animated hidden" data-scroll-class="visible fadeIn zoomIn"></div> </div>
+  <div class="col-lg-4">
+  <div data-img="https://unsplash.it/600/400?image=1082"  class="lazy-load animated hidden" data-scroll-class="visible fadeIn zoomIn"> </div></div>
+  <div class="col-lg-4">
+  <div data-img="https://unsplash.it/600/400?image=1081"  class="lazy-load animated hidden" data-scroll-class="visible fadeIn zoomIn"> </div></div>
+  <div class="col-lg-4">
+  <div data-img="https://unsplash.it/600/400?image=1080"  class="lazy-load animated hidden" data-scroll-class="visible fadeIn zoomIn"> </div></div>
+  <div class="col-lg-4">
+  <div data-img="https://unsplash.it/600/400?image=1079"  class="lazy-load animated hidden" data-scroll-class="visible fadeIn zoomIn"> </div></div>
+</div>
+</div>
+<script src="http://code.jquery.com/jquery-3.0.0.min.js"></script>
+<script src="scrollClass.js"></script>
+<script>
+$('.animated').scrollClass({
+	    delay: 10, //set class after 10 milliseconds delay
+	    threshold: 100 //set class when 100% of element enters the viewport
+	  });
+ $('.lazy-load').scrollClass({
+	    delay: 10, //set class after 10 milliseconds delay
+	    threshold: 25, //set class when element enters the viewport
+	    callback: function () { //lazy load images
+	    	var selector = $(this);
+	      	var img = $("<img class='img-fluid' />").attr('src', $(this).data("img")).one('load', function() {
+		    	selector.append(img);
+		    	selector.addClass("height-auto"); //add height auto for responsive after image has loaded
+		    });
+	    }
+	  });
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

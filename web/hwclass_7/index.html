@@ -64,7 +64,7 @@
 				</div>
 				<hr>
 			</div>
-			<nav class="navbar">
+			<nav id="sticker" class="navbar bgt" data-scroll-class="awesome-animation" >
 	  <a class="navbar-brand" href="#"><img src="images/Jevelin_logo_light.png" alt=""></a>
 
 	  <div id="ex1" class="modal">
@@ -77,23 +77,23 @@
 	
 	  <div>
 		<ul >
-		   <li>
-			<a class="active" href="#">Home</a>
+		   <li >
+			<a class="active"  href="#">Home</a>
 		  </li>
 		  <li>
-			<a  href="#about">About</a>
+			<a class="inactive" href="#about">About</a>
 		  </li>
 		  <li>
-			<a href="#service">Services</a>
+			<a class="inactive1" href="#service">Services</a>
 		  </li>
 		  <li>
-			<a href="#pricing">Pricing</a>
+			<a class="inactive2" href="#pricing">Pricing</a>
 		  </li>
 		  <li>
-			<a  href="#contact">Contact</a>
+			<a class="inactive3" href="#contact">Contact</a>
 		  </li>
 		  <li >
-			<a  href="#"><button class="button" type="button">Purchase</button></a>
+			<button class="button" type="button">Purchase</button>
 		  </li>
 		  
 	  
@@ -346,6 +346,15 @@
 	<script src="js/jquery.counterup.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<script src="cutome.js"></script>
+	<script src="jquery.js"></script>
+<script src="js/jquery.sticky.js"></script>
+<script>
+  $(document).ready(function(){
+    $("#sticker").sticky({topSpacing:0});
+  });
+</script>
+<script src="js/cutome.js"></script>
 
 
 
