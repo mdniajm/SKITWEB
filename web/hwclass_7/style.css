@@ -60,6 +60,7 @@ header{
 }
 .bgd{
     background-color: rgba(0, 0, 0, .5);
+    color: blue;
 }
 
 a.navbar-brand {
@@ -96,18 +97,47 @@ nav ul li a{
 	text-decoration: none;
 	display: inline-block;
 	color: white;
-    padding: 0px 1.2em;
+    padding: 0px 1.5em;
     transition: color 2s;
     margin-right: 5px;
+    text-align: left;
+    transition: all 1s;
+}
+nav ul li a::after{
+  
 }
 nav ul li a:hover{
     color: #CA57BE;
 }
-.inactive, .inactive1, .inactive2, .inactive3{
-    border-bottom: none;
+nav ul li a:hover::after{
+    content: "";
+    width: 48px;
+    height: 2px;
+    background-color: blue;
+    display: block;
+    margin-top: 5px;
+    position: relative;
+    text-align: left;
 }
-.active{
-    border-bottom: 2px solid blue;
+.inactive::after, .inactive1::after, .inactive2::after, .inactive3::after{
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: blue;
+    display: ;
+    margin-top: 5px;
+    position: relative;
+    transition: all 1s;
+}
+.active::after{
+    content: "";
+    width: 48px;
+    height: 2px;
+    background-color: blue;
+    display: block;
+    margin-top: 5px;
+    position: relative;
+    transition: all 1s;
 }
 
 .title-secton {
