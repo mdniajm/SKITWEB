@@ -1,0 +1,82 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>an progress bar</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+  </head>
+  <body>
+
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+<div class="container">
+  <div id="skill">
+    <div class="skillbar html">
+      <div class="filled" data-width="90%"></div>
+      <span class="title">HTML</span>
+      <span class="percent">90%</span>
+    </div>
+
+    <div class="skillbar css">
+      <span class="title"></i> CSS</span>
+      <span class="percent">75%</span>
+      <div class="filled" data-width="75%"></div>
+    </div>
+
+    <div class="skillbar js">
+      <span class="title">JS</span>
+      <span class="percent">50%</span>
+      <div class="filled" data-width="50%"></div>
+    </div>
+
+    <div class="skillbar php">
+      <span class="title">php</span>
+      <span class="percent">40%</span>
+      <div class="filled" data-width="40%"></div>
+    </div>
+
+    <div class="skillbar sass">
+      <span class="title"></i> sass</span>
+      <span class="percent">40%</span>
+      <div class="filled" data-width="40%"></div>
+    </div>
+
+    <div class="skillbar indesign">
+      <span class="title"></i> sass</span>
+      <span class="percent">40%</span>
+      <div class="filled" data-width="400%"></div>
+    </div>
+
+    <div class="skillbar">
+      <span class="title"></i> less</span>
+      <span class="percent">40%</span>
+      <div class="filled" data-width="400%"></div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="/bower_components/modernizr/modernizr.js"></script>
+    <script src="scripts/an-progress-bar.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.skillbar').skillbar({
+        speed: 1000,
+    });
+});
+</script>
+  </body>
+</html>

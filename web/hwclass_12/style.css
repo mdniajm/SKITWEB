@@ -1,0 +1,21 @@
+.slideshow{
+  max-width: 900px;
+  height: 525px;
+  margin: 0 auto 40px;
+  outline: none;
+}
+
+
+/*.image_wrapper .text_content {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  color: #fff;
+  text-shadow: 0 0 3px rgba(0,0,0,.5);
+  opacity: 1;
+}*/
+
+/*.text_content * {
+  margin: .1em 0;
+}
+*/

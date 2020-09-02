@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.circle{
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<img  id="photo" src="fl.jpeg" alt="">
+<br><br>
+	<button onclick="show()">Show</button>
+
+	<button onclick="hide()">Hide</button>
+
+	<button onclick="show_hide()">Show/Hide</button>
+	<button onclick="changePhoto()">Next</button>
+
+	<button onclick="circle()">Circle</button>
+	<h1 id="demo"></h1>
+
+	<script>
+		function hide(){
+			// document.getElementById("photo").style.display="none";
+			var x = document.getElementById("photo");
+			 x.style.display="none";
+		};
+		function show(){
+			var x = document.getElementById("photo");
+			x.style.display="block";
+		};
+
+		function show_hide(){
+			var x = document.getElementById("photo");
+			if (x.style.display==="none") {
+				x.style.display="block"
+			} else {
+				x.style.display="none";
+			}
+		};
+		function circle(){
+			document.getElementById("photo").classList.add("circle");
+		}
+		
+		
+	</script>
+	<script>
+		function changePhoto(){
+		document.getElementById("photo").src = "download.jpg";
+		};
+		var text = "";
+		var i;
+		for (i = 0 ; i <= 10; i++) {
+			text  +=   "bangladesh" + "<br>";
+		}
+		document.getElementById("demo").innerHTML = text;
+		var x = prompt("Your First Name");
+		    y = prompt("you last name");
+		    document.getElementById("demo").innerHTML = x +" "+ y ;
+
+	</script>
+      
+</body>
+</html>

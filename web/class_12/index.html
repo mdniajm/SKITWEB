@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.smallimg{
+			width: 100px;
+		}
+		.largeimg{
+			width: 300px;
+			margin: auto;
+			position: absolute;
+			left: 150px;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			
+		}
+	</style>
+</head>
+<body>
+	
+	<!-- <button id="hide">Hide</button>
+	<button id="show">Show</button> -->
+	<!-- <button id="show_hide">Show/Hide</button> -->
+
+
+	<img class="smallimg" src="fl.jpeg" alt="">
+	<img class="largeimg" src="fl.jpeg" alt="">
+
+	<script src="jquery-3.5.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// $("#hide").click(function(){
+			// 	$("h2").hide()
+			// });
+			// $("#show").click(function(){
+			// 	$("h2").show()
+			// });
+			$(".smallimg").click(function(){
+				$(".largeimg").hide(1000);
+				alert("Hide large image")
+
+					
+			});
+
+		});
+
+
+	</script>
+
+</body>
+</html>
