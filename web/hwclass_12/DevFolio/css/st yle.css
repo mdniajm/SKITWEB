@@ -4,9 +4,6 @@
     box-sizing:border-box;
     font-family: 'Open Sans', sans-serif;
 }
-.container{
-    overflow-x: hidden;
-}
 .home {
     height: 670px;
     background: url("../img/intro-bg.jpg");
@@ -117,7 +114,7 @@ nav ul li a:hover::after{
 }
 
 div#about {
-    max-width: 1115px;
+    width: 1115px;
     margin: 100px auto;
     background: white;
     /* margin-bottom: 200px; */
@@ -184,7 +181,7 @@ div#about {
 
 div#services {
     text-align: center;
-    max-width: 1115px;
+    width: 1115px;
     margin: 0 auto;
     margin-top: 150px;
 }
@@ -274,9 +271,8 @@ table .fa {
 }
 
 table {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 67px 0px 28px;
+    width: 100%;
+    padding: 67px 170px 0px 108px;
     position: relative;
     top: 0;
     bottom: 0;
@@ -292,7 +288,7 @@ td {
 
 div#work {
     text-align: center;
-    max-width: 1115px;
+    width: 1115px;
     margin: 0 auto;
     margin-top: 150px;
 }
@@ -333,7 +329,7 @@ div#work {
 
 div#blog {
     text-align: center;
-    max-width: 1115px;
+    width: 1115px;
     margin: 150px auto;
 }
 
@@ -408,7 +404,7 @@ div#blog {
     margin-left: 47px;
 }
 div#contact {
-    max-width: 1115px;
+    width: 1115px;
     margin: 0 auto;
     height: 700px;
     background: white;
@@ -507,7 +503,7 @@ button:hover {
 .contact-info span {margin-bottom: 10px;}
 
 .copyright {
-    width: 100%;
+    /* width: 100%; */
     margin: 77px auto 0px;
     text-align: center;
     padding-bottom: 26px;
@@ -551,113 +547,5 @@ button:hover {
 .copyright a{
     text-decoration: none;
     color: #0078ff;
-
-}
-@media only screen and (max-width: 1059px){
-    .info {
-    width: 49%;
-    display: inline-block;
-    float: left;
-    padding: 60px 16px;
-}
-.pro-pic{
-    display: inline-block;
-    float: left;
-    width: 167px;
-}
-
-.short-info{
-    display: inline-block;
-    line-height: 40px;
-    margin: -9px 00px 0px -1px;
-}
-
-.about-me {
-    width: 49%;
-    display: inline-block;
-    clear: both;
-    margin-top: -18px;
-    padding: 82px 6px 0px 16px;
-    line-height: 29px;
-    text-align: justify;
-}
-.services-item{
-    margin: 18px 5px;
-    padding: 14px 10px;
-
-}
-.item .fa {
-    font-size: 30px;
-    width: 90px;
-    height: 90px;
-    border: 6px solid #0078ff;
-    padding: 25px 18px 0px;
-   
-}
-}
-@media only screen and (max-width: 860px){
-    nav ul{
-        display: none;
-
-    }
-    .info, .about-me{
-        width: 100%;
-        padding: 50px;
-    }
-    .short-info{
-
-    
-}
-    .services-item {
-    width: 43.33%;
-    display: inline-block;
-    margin: 18px 10px;
-    background: white;
-    border-radius: 10px;
-    padding: 45px 10px;
-    line-height: 33px;
-    box-shadow: 0px 1px 4px 0px #00000036;
-    transition: all 1s;
-}
-td {
-    padding: 0px 10px;
-}
-
-
-}
-@media only screen and (max-width: 445px){
-    #contact{
-    height: 760px !important;
-}
-
-}
-@media only screen and (max-width: 600px){
-    .services-item{
-    width: 86%;
-    
-    padding: 50px;
-}
-.p-items, .b-item, .contact-form, .contact-info{
-    width: 86%;
-
-}
-.contact-info{
-    margin-top: 20px;
-}
-#contact{
-    height: 1228px !important;
-}
-
-}
-@media only screen and (max-width: 492px){
-    #contact{
-    height: 1350px !important;
-}
-
-}
-@media only screen and (max-width: 445px){
-    #contact{
-    height: 1428px !important;
-}
 
 }
