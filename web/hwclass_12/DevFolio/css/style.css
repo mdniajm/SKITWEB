@@ -41,6 +41,10 @@ nav {
     transition: all .4s;
     color: #0078ff;
 }
+.bgd .logo{
+    font-size: 25px;
+}
+
 .bgd a {
     color: #0078ff;
 }
@@ -598,6 +602,9 @@ button:hover {
 @media only screen and (max-width: 860px){
        nav {
     padding: 12px 70px 0px 27px;
+}
+.bgd{
+    padding: 12px 70px 17px 27px !important;
 }
     nav ul{
         display: none;
