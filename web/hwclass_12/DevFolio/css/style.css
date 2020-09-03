@@ -596,6 +596,9 @@ button:hover {
 }
 }
 @media only screen and (max-width: 860px){
+       nav {
+    padding: 12px 70px 0px 27px;
+}
     nav ul{
         display: none;
 
@@ -632,6 +635,7 @@ td {
 
 }
 @media only screen and (max-width: 600px){
+
     .services-item{
     width: 86%;
     
