@@ -5,7 +5,9 @@
     font-family: 'Poppins', sans-serif;
 
 }
+.
 .container{
+   overflow-x: hidden;
    width: 100%;
    margin: 0 auto;
    
@@ -139,6 +141,7 @@ nav ul li a:hover::after{
     position: relative;
     transition: all 1s;
 }
+/*Home title and description*/
 
 .title-secton {
     margin: 177px 0px 0px 0px;
@@ -195,6 +198,8 @@ nav ul li a:hover::after{
     color: black;
     cursor: pointer;
 }
+/*fixid sidebar*/
+
 .sidebar{
     height: 56px;
     position: fixed;
@@ -305,8 +310,10 @@ nav ul li a:hover::after{
 .go-top .fa:hover{
     color:blue;
 }
+/*about section*/
+
 .body {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 50px 0px 150px;
     scroll-behavior: smooth;
@@ -363,6 +370,8 @@ img{
     margin: 92px 0px;
     padding: 23px 0px 23px 90px;
 }
+/*services section*/
+
 .heading{
     text-align: center;
     padding-top: 130px;
@@ -383,7 +392,7 @@ img{
 }
 .row-item{
     display: inline-block;
-    width: 271px;
+    max-width: 271px;
     height: 330px;
     text-align: center;
     padding: 70px 21px 40px;
@@ -414,6 +423,8 @@ img{
     transform: scale(1.025);
     cursor: pointer;
 }
+/*video intro*/
+
 .video-section{
     width:  100%;
     margin: 0 auto;
@@ -451,14 +462,16 @@ img{
     font-size: 50px;
     padding-bottom: 56px;
 }
+/*product pricing section*/
+
 .product{
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 172px 0px 190px;
     
 }
 .product-2, .p-text, .product-1{
-    width: 423px;
+    max-width: 423px;
     display: inline-block;
     clear: both;
     animation-duration: 2s;
@@ -524,6 +537,7 @@ img{
     border: none;
     border-bottom: .5px solid #d2d2d2a6;
 }
+/*contact bannar section*/
 .bannar{
     width: 100%;
     margin: 0 auto;
@@ -546,6 +560,7 @@ img{
     font-weight: 300!important;
     color: #ffffff;
 }
+/*footer section*/
 footer{
     width: 100%;
     margin: 0 auto;
@@ -593,6 +608,7 @@ footer h4{
     padding-right:38px;
     
 }
+/*copyright section*/
 
 .copyright{
     width: 1048px;
@@ -668,12 +684,12 @@ a{
   }
   @media screen and (max-width: 1300px) {
     header, .video-section, .bannar, footer, .row-section, .body{
-        width: 1300px;
+        max-width: 1300px;
         margin: 0 auto;
      
     }
     .row-item{
-        width: 296px;
+        max-width: 296px;
     }
 
   }
