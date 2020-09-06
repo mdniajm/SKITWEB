@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+  />
+    <link rel="stylesheet" href="css/square1.css">
+    <link rel="stylesheet" href="css/an-skill-bar.css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+        <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+           jQuery(document).ready(function( $ ) {
+               $('.counter').counterUp({
+                   delay: 10,
+                   time: 1000
+               });
+           });
+         </script>
+</head>
+<body>
+    <div class="container">
+       <div class="home">
+           <div id="home">
+        <header >
+            <nav class="navbar bgt">
+                <div class="logo">DevFolio</div>
+                 <div class="togglenav"></div>
+                <ul class="nav">
+                    <li><a class="active" href="#home">HOME</a></li>
+                    <li><a class="inactive" href="#about">ABOUT</a></li>
+                    <li><a class="inactive1" href="#services">SERVICES</a></li>
+                    <li><a class="inactive2" href="#work">WORK</a></li>
+                    <li><a class="inactive3" href="#blog">BLOG</a></li>
+                    <li><a class="inactive4" href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- home title section -->
+        <div class="big-title">
+            <h1>I am Morgan Freeman</h1>
+            <span class="slideText">Web Designer</span>
+            
+        </div>
+       </div>
+       </div>
+        <!-- About section -->
+        <div id="about">
+            <div class="info">
+                <div class="pro-pic">
+                    <img src="img/testimonial-2.jpg" alt="">
+                </div>
+                <div class="short-info">
+                    <p><b>Name:</b>Morgan Freeman </p>
+                <p><b>Profile:</b>full stack developer</p>
+                <p><b>Email:</b>contact@example.com </p>
+                <p><b>Phone:</b> (617) 557-0089</p>
+                </div>
+                 <div class="skill">
+                    <h2>Skill</h2>
+                <div class="skillbar">
+      <div class="filled" data-width="90%"></div>
+      <span class="title">HTML</span>
+      <span class="percent">90%</span>
+    </div>
+
+    <div class="skillbar">
+      <span class="title"></i> CSS</span>
+      <span class="percent">85%</span>
+      <div class="filled" data-width="85%"></div>
+    </div>
+
+    <div class="skillbar">
+      <span class="title">JS</span>
+      <span class="percent">70%</span>
+      <div class="filled" data-width="70%"></div>
+    </div>
+
+    <div class="skillbar">
+      <span class="title">php</span>
+      <span class="percent">75%</span>
+      <div class="filled" data-width="75%"></div>
+    </div>
+    <div class="skillbar">
+      <span class="title">React</span>
+      <span class="percent">80%</span>
+      <div class="filled" data-width="80%"></div>
+    </div>
+    <div class="skillbar ">
+      <span class="title">Wordpress</span>
+      <span class="percent">75%</span>
+      <div class="filled" data-width="75%"></div>
+    </div>
+
+    
+            </div>
+            </div>
+
+            <div class="about-me">
+                <h3>About me</h3>
+                <hr>
+                <span class="description">Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. <br>
+    
+                   <br> Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis porttitor volutpat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem. <br>
+                    <br>
+                    Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Nulla porttitor accumsan tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.</span>
+            </div>
+    
+        </div>
+        <!-- Start Services Section -->
+        <div id="services">
+            <h1>SERVICES</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <hr>
+            <div class="item">
+                <div class="services-item wow  animate__animated animate__fadeInLeft">
+                    <i class="fa fa-desktop"></i>
+                    <h3>WEB DESIGN</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
+                </div>
+                <div class="services-item wow  animate__animated animate__fadeIn">
+                    <i class="fa fa-laptop-code"></i>
+                    <h3>WEB DEVELOPMENT</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
+                </div>
+                <div class="services-item wow animate__animated animate__fadeInRight">
+                    <i class="fa fa-camera"></i>
+                    <h3>PHOTOGRAPHY</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
+                </div>
+                <div class="services-item wow  animate__animated animate__fadeInLeft">
+                    <i class="fa fa-mobile-alt"></i>
+                    <h3>RESPONSIVE DESIGN</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
+                </div>
+                <div class="services-item wow  animate__animated animate__fadeIn">
+                    <i class="fa fa-paint-brush"></i>
+                    <h3>GRAPHIC DESIGN</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
+                </div>
+                <div class="services-item wow animate__animated animate__fadeInRight">
+                    <i class="fa fa-chart-bar"></i>
+                    <h3>MARKETING SERVICES</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia, provident vitae! Magni tempora perferendis eum non provident.</p>
+                </div>
+            </div>
+           
+    
+        </div>
+         <div class="achievement">
+               <div class="overlay">
+                    <table>
+                    <tr>
+                        <td><i class="fa fa-check"></i></td>
+                        <td><i class="fa fa-calendar"></i></td>
+                        <td><i class="fa fa-users"></i></td>
+                        <td><i class="fa fa-medal"></i></td>
+                    </tr>
+                    <tr>
+                        <th class="counter">450</th>
+                        <th class="counter">15</th>
+                        <th class="counter">550</th>
+                        <th class="counter">36</th>
+                    </tr>
+                    <tr>
+                        <td>WORKS COMPLETED</td>
+                        <td>YEARS OF EXPERIENCE</td>
+                        <td>TOTAL CLIENTS</td>
+                        <td>AWARD WON</td>
+                    </tr>
+                </table>
+               </div>
+            </div>
+        <!-- Start Work Section -->
+        <div id="work">
+            <h1>PORTFOLIO</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p><hr>
+            <div class="p-items">
+                <div class="p-item">
+                    <div class="img"><img src="img/work-1.jpg" alt=""></div>
+                </div>
+                <div class="text">
+                    <h4>Lorem, ipsum dolor.</h4>
+                <p>Web Design/ <span>18 Sep. 2020</span> <span class="fa"></span></p>
+                </div>
+            </div>
+            <div class="p-items">
+                <div class="p-item">
+                    <div class="img"><img src="img/work-2.jpg" alt=""></div>
+                </div>
+                <div class="text">
+                    <h4>Lorem, ipsum dolor.</h4>
+                <p>Web Design/ <span>18 Sep. 2020</span> <span class="fa"></span></p>
+                </div>
+            </div>
+            <div class="p-items">
+                <div class="p-item">
+                    <div class="img"><img src="img/work-3.jpg" alt=""></div>
+                </div>
+                <div class="text">
+                    <h4>Lorem, ipsum dolor.</h4>
+                <p>Web Design/ <span>18 Sep. 2020</span> <span class="fa"></span></p>
+                </div>
+            </div>
+            <div class="p-items">
+                <div class="p-item">
+                    <div class="img"><img src="img/work-4.jpg" alt=""></div>
+                </div>
+                <div class="text">
+                    <h4>Lorem, ipsum dolor.</h4>
+                <p>Web Design/ <span>18 Sep. 2020</span> <span class="fa"></span></p>
+                </div>
+            </div>
+            <div class="p-items">
+                <div class="p-item">
+                    <div class="img"><img src="img/work-5.jpg" alt=""></div>
+                </div>
+                <div class="text">
+                    <h4>Lorem, ipsum dolor.</h4>
+                <p>Web Design/ <span>18 Sep. 2020</span> <span class="fa"></span></p>
+                </div>
+            </div>
+            <div class="p-items">
+                <div class="p-item">
+                    <div class="img"><img src="img/work-6.jpg" alt=""></div>
+                </div>
+                <div class="text">
+                    <h4>Lorem, ipsum dolor.</h4>
+                <p>Web Design/ <span>18 Sep. 2020</span> <span class="fa"></span></p>
+                </div>
+            </div>
+            <div class="carosol">
+                <h1>Work Gallary</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <hr>
+                <div class="slideshow">
+                    <img src="img/work-1.jpg" alt="Work 1">
+                    <img src="img/work-2.jpg" alt="Work 2">
+                    <img src="img/work-3.jpg" alt="Work 3">
+                    <img src="img/work-4.jpg" alt="Work 4">
+                    <img src="img/work-5.jpg" alt="Work 5">
+                    <img src="img/work-6.jpg" alt="Work 6">
+                 </div>
+            </div>
+    
+        </div>
+        <!-- Start Blog Section -->
+        <div id="blog">
+            <h1>BLOG
+            </h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <hr>
+            <div class="b-items">
+                <div class="b-item">
+                    <img src="img/post-1.jpg" alt="">
+                   <div class="b-title">
+                    <p>TRAVEL</p>
+                    <h5><a href="">See more ideas about Travel</a></h5>
+                    <p>Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi</p>
+                   </div>
+                    <div class="author">
+                        <img src="img/testimonial-2.jpg" alt=""> <span> <a href="">Morgan Freeman</a></span> <span class="fa fa-clock"></span> <span>10 min</span>
+                    </div>
+                </div>
+                <div class="b-item">
+                    <img src="img/post-2.jpg" alt="">
+                   <div class="b-title">
+                    <p>TRAVEL</p>
+                    <h5><a href="">See more ideas about Travel</a></h5>
+                    <p>Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi</p>
+                   </div>
+                    <div class="author">
+                        <img src="img/testimonial-2.jpg" alt=""> <span> <a href="">Morgan Freeman</a></span> <span class="fa fa-clock"></span> <span>10 min</span>
+                    </div>
+                </div>
+                <div class="b-item">
+                    <img src="img/post-3.jpg" alt="">
+                   <div class="b-title">
+                    <p>TRAVEL</p>
+                    <h5><a href="">See more ideas about Travel</a></h5>
+                    <p>Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi</p>
+                   </div>
+                    <div class="author">
+                        <img src="img/testimonial-2.jpg" alt=""> <span> <a href="">Morgan Freeman</a></span> <span class="fa fa-clock"></span> <span>10 min</span>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+
+        <!-- Start Contact section -->
+        <div id="contact">
+            <div class="contact-form">
+                <h3>Send Message Us</h3>
+                <hr>
+                <form action="">
+                    <input name="name" type="text" placeholder="Your Name">
+                    <input name="email" type="email" placeholder="E-mail">
+                    <input name="subject" type="text" placeholder="Subject">
+                    <textarea name="message" id="massage" cols="30" rows="10" placeholder="Message"></textarea>
+                    <button type="button" name="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h3>Get in Touch
+    
+                </h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem expedita aperiam aliquid at. Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis mollitia inventore?</p> <br> <br>
+                <i class="fa fa-map-marker-alt"></i> <span>&nbsp;329 WASHINGTON ST BOSTON, MA 02108</span><br>
+                <br>
+                <i class="fa fa-phone"></i> <span> &nbsp;329 WASHINGTON ST BOSTON, MA 02108</span> <br>
+                <br>
+                <i class="fa fa-envelope"></i> <span>&nbsp;329 WASHINGTON ST BOSTON, MA 02108</span> <br>
+                <br>
+                <div class="social">
+                   <a href=""> <span class="fa fa-facebook"></span></a>
+                   <a href=""><span class="fa fa-instagram"></span></a>
+                   <a href=""><span class="fa fa-twitter"></span></a>
+                   <a href=""><span class="fa fa-pinterest-p"></span></a>
+                </div>
+           
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; Copyright DevFolio. All Rights Reserved
+    
+                Designed by <a href="fb.me/mdniajmakhdum.bd">Md. Niaj Makhdum</a></p>
+        </div>
+        <div class="go-top go-none">
+            <a href="#home"><span class="fa fa-chevron-circle-up"></span></a>
+        </div>
+    
+    </div>
+   
+    <script src="https://kit.fontawesome.com/509539fb79.js" crossorigin="anonymous"></script>
+    
+   
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/scrollClass.min.js"></script>
+    <script src="js/wow.min.js"></script>
+     <script>
+              new WOW().init();
+              </script>
+    <script src="js/cutome.js" type="text/javascript"></script>
+    <script src="js/jquery.slide-text-left.js"></script>
+    <script src="js/an-skill-bar.js"></script>
+    <script src="js/square1.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+    $('.slideshow').square1({
+        slide_duration: 5000,
+        dots_nav: 'hover'
+    });
+});
+   
+    </script>
+    <script>
+  $(document).ready(function () {
+    $('.skillbar').skillbar({
+        speed: 1000,
+    });
+});
+</script>
+<script>
+   $(document).ready(function () {
+    $('.togglenav').click(function () {
+        $('.togglenav').toggleClass('tactive')
+        $('.nav').toggleClass('tactive')
+    })
+})
+ 
+</script>
+
+</body>
+</html>
