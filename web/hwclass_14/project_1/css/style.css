@@ -22,6 +22,9 @@ body{
     background-size: cover;
     color: white;
 }
+#navbar nav{
+    z-index: 1000;
+}
 #head hr{
     width: 100%;
     border: none;
@@ -33,8 +36,76 @@ nav a{
     color: white;
     transition: all 1s;
 }
+.navbar-dark{
+    background-color: transparent;
+    transition: all .4s;
+    color: white;
+}
+.navbar-light{
+    background-color: white;
+    padding: 10px 70px 15px;
+    transition: all .4s;
+    color: #0078ff !important;
+}
+.navbar-light h2{
+    font-size: 1.6rem !important;
+}
+.active{
+    transition: all 1s;
+}
+nav ul li a::after{
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #0078ff;
+    display: block;
+    margin-top: 5px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    transition: width 1s;
+}
+nav ul li a:hover::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #0078ff;
+    display: block;
+    margin-top: 5px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    transition: width 1s;
+}
+.active::after{
+   content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #0078ff;
+    display: block;
+    margin-top: 5px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    transition: width 1s;
+}
+
+.navbar-light a {
+    color: #0078ff;
+    font-weight: bold;
+}
  #about img {
     width: 100%;
+    z-index: 1000;
 }
 .v-section{
     margin-bottom: 100px !important;
@@ -229,4 +300,15 @@ footer a:hover{
     height: 100%;
     z-index: 9999;
     background: url(images/loader-64x/Preloader_2.gif) center no-repeat #fff;
+}
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../images/Preloader_2.gif) center no-repeat #fff;
 }
