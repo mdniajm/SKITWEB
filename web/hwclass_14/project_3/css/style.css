@@ -48,6 +48,9 @@ header .overlay {
   opacity: 0.5;
   z-index: 1;
 }
+.navbar-brand img {
+    width: 125px;
+}
 
 @media (pointer: coarse) and (hover: none) {
   header {
@@ -157,7 +160,7 @@ div#news {
     margin-bottom: 100px !important;
 }
 footer.bg-dark.text-white.pt-5.mt-5.pb-5 {
-    padding: 100px 0px !important;
+    padding: 100px 0 1px !important;
 }
 .card{
     transition: transform 0.5s;
