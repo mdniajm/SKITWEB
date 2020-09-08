@@ -5,89 +5,51 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style>
-		.sample{
-			color: red;
+		.smallimg{
+			width: 100px;
 		}
-		
+		.largeimg{
+			width: 300px;
+			margin: auto;
+			position: absolute;
+			left: 150px;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			
+		}
 	</style>
 </head>
 <body>
-	<img id="pic" src="fl.jpeg" alt="rose" width="300px"> <br> <br>
-    <button onclick="showhide()">change image</button>
-    <button onclick="show()">show</button>
-	<button onclick="hide()">hide</button>
-	<button onclick="circle()">Make Circle</button>
-
-
-	<h1 class="sample" >Bangladesh</h1>
-	<h1  class="sample">Pakistan</h1>
-	<h1 class="sample">India</h1>
 	
-	
+	<!-- <button id="hide">Hide</button>
+	<button id="show">Show</button> -->
+	<!-- <button id="show_hide">Show/Hide</button> -->
 
+
+	<img class="smallimg" src="fl.jpeg" alt="">
+	<img class="largeimg" src="fl.jpeg" alt="">
+
+	<script src="jquery-3.5.1.min.js"></script>
 	<script>
-		function circle(){
-			document.getElementById("pic").classList.add("circle");
+		$(document).ready(function(){
+			// $("#hide").click(function(){
+			// 	$("h2").hide()
+			// });
+			// $("#show").click(function(){
+			// 	$("h2").show()
+			// });
+			$(".smallimg").click(function(){
+				$(".largeimg").hide(1000);
+				alert("Hide large image")
 
-		}
+					
+			});
 
-		
-
-
-
-
-
-
-
-
-
-
-	// // 		function change(){
-	// // var x = document.getElementById("pic").src = "img/fl2.jpg";
+		});
 
 
-
-
-
-
-	// 	function hide(){
-	// 	var x = document.getElementById("pic"); 
-	// 	    x.style.visibility="hidden";
- //         //document.getElementById("pic").style.display="none";
-	// 	}
-	// 	function show(){
-	// 	//var x = document.getElementById("pic");
-  
- //            x.style.visibility="visible";
-	// 	}
-	// 	document.getElementsByClassName("sample")[2].style.color="green"
-	// 	document.getElementsByTagName("h1")[0].style.color="blue"
-
-         
-         // var currenttime = 10 ;
-
-         // if(currenttime == 10){
-         // 	alert("good Morning");
-         // }
-         // else {
-         // 	alert("Time is not perfect");
-         // }
-   
-// //    function showhide(){
-// // var x=document.getElementById("pic");
-// // if x.style.visibility=="hidden"{
-// // 	x.style.visibility=="visible"
-// // }
-// // else{
-// // 	x.style.visibility=="hidden";
-// // }
-
-//    }
-
-
-
-		
 	</script>
-	
+
 </body>
 </html>

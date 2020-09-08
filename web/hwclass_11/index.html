@@ -4,65 +4,29 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<style>
-		.circle{
-			border-radius: 50%;
-		}
-	</style>
+	<link rel="Stylesheet" href="square1.css" type="text/css" />
+		
+     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<img  id="photo" src="fl.jpeg" alt="">
-<br><br>
-	<button onclick="show()">Show</button>
-
-	<button onclick="hide()">Hide</button>
-
-	<button onclick="show_hide()">Show/Hide</button>
-	<button onclick="changePhoto()">Next</button>
-
-	<button onclick="circle()">Circle</button>
-	<h1 id="demo"></h1>
-
-	<script>
-		function hide(){
-			// document.getElementById("photo").style.display="none";
-			var x = document.getElementById("photo");
-			 x.style.display="none";
-		};
-		function show(){
-			var x = document.getElementById("photo");
-			x.style.display="block";
-		};
-
-		function show_hide(){
-			var x = document.getElementById("photo");
-			if (x.style.display==="none") {
-				x.style.display="block"
-			} else {
-				x.style.display="none";
-			}
-		};
-		function circle(){
-			document.getElementById("photo").classList.add("circle");
-		}
-		
-		
-	</script>
-	<script>
-		function changePhoto(){
-		document.getElementById("photo").src = "download.jpg";
-		};
-		var text = "";
-		var i;
-		for (i = 0 ; i <= 10; i++) {
-			text  +=   "bangladesh" + "<br>";
-		}
-		document.getElementById("demo").innerHTML = text;
-		var x = prompt("Your First Name");
-		    y = prompt("you last name");
-		    document.getElementById("demo").innerHTML = x +" "+ y ;
-
-	</script>
-      
+	   <div class="slideshow">
+			<img src="img/c1.jpg" alt="Caption 1">
+			<img src="img/c2.jpg" alt="Caption 2">
+			<img src="img/c3.jpg" alt="Caption 3">
+			<img src="img/c4.jpg" alt="Caption 1">
+			<img src="img/c5.jpg" alt="Caption 2">
+			<img src="img/c6.jpg" alt="Caption 3">
+		</div>
+         
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/square1.js"></script>
+<script>
+	$('.slideshow').square1({
+		slide_duration: 5000,
+		dots_nav: 'hover'
+	});
+</script>
+</head>
 </body>
 </html>
+
